@@ -1,6 +1,6 @@
 {
-  "name": "@fixcer/npx_card",
-  "version": "1.0.1",
+  "name": "fixcer",
+  "version": "1.0.2",
   "description": "A personal card for fixcer (@fixcer)",
   "main": "cli.js",
   "bin": {
