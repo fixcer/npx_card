@@ -37,8 +37,8 @@ const questions = [
             text: ' Downloading Resume',
             spinner: cliSpinners.material,
           }).start();
-          let pipe = request('https://fixcer.me/api/resume').pipe(
-            fs.createWriteStream('./fixcer-resume.html')
+          let pipe = request('https://github.com/fixcer/npx_card/cv.pdf').pipe(
+            fs.createWriteStream('./fixcer-resume.pdf')
           );
           pipe.on('finish', function () {
             let downloadPath = path.join(process.cwd(), 'fixcer.html');
