@@ -41,7 +41,7 @@ const questions = [
             fs.createWriteStream('./fixcer-resume.pdf')
           );
           pipe.on('finish', function () {
-            let downloadPath = path.join(process.cwd(), 'fixcer.html');
+            let downloadPath = path.join(process.cwd(), 'fixcer-resume.pdf');
             console.log(`\nResume Downloaded at ${downloadPath} \n`);
             open(downloadPath);
             loader.stop();
